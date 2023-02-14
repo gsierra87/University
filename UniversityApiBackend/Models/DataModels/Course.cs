@@ -2,7 +2,7 @@
 
 namespace UniversityApiBackend.Models.DataModels
 {
-    public enum Nivel
+    public enum Level
     {
         Basic,
         Medium,
@@ -17,7 +17,7 @@ namespace UniversityApiBackend.Models.DataModels
         [Required, StringLength(280)]
         public string ShortDescription { get; set; } = string.Empty;
         public string Description { get; set; } = string.Empty;
-        public Nivel Nivel { get; set; }
+        public Level Level { get; set; }
 
         [Required]
         public ICollection<Category> Categories { get; set; } = new List<Category>();
